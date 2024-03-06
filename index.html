@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calendar with Theme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="header">
+            <span class="previous-month" onclick="previousMonth()">&#10094;</span>
+            <h1 id="month-year"></h1>
+            <span class="next-month" onclick="nextMonth()">&#10095;</span>
+            <label for="theme-slider">Dark Mode - Ligth Mode</label>
+            <input type="range" min="0" max="1" step="1" id="theme-slider" onchange="changeTheme()">
+        </div>
+        <div class="days">
+            <span>Sun</span>
+            <span>Mon</span>
+            <span>Tue</span>
+            <span>Wed</span>
+            <span>Thu</span>
+            <span>Fri</span>
+            <span>Sat</span>
+        </div>
+        <div class="dates" id="dates"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

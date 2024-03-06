@@ -1,0 +1,76 @@
+/* Shared styles */
+.calendar-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: Poppins, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header span {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.days {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.days span {
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dates {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dates span {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+/* Light mode styles (default) */
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+.calendar-container {
+    border: 1px solid #ddd;
+}
+
+.dates span {
+    border: 1px solid #ddd;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode .calendar-container {
+    border: 1px solid #444;
+}
+
+.dark-mode .dates span {
+    border: 1px solid #444;
+}
